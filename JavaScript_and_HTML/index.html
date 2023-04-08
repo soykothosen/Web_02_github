@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>JavaScript & HTML</title>
+</head>
+
+<body>
+    <p id="pcontent"> Hi , How are you</p>
+
+    <img id="imgcontent" src="" width="30%" alt="Image" > <br> <br>
+
+    <a  id="acontent" > Click Me </a> <br> <br>
+
+    <button type="button" onclick="ChangeContent()">Change P tag Content Me!</button>
+</body>
+
+
+<script> 
+
+function ChangeContent(){
+
+
+
+    console.log("Hi I am in Function");
+
+    document.getElementById("pcontent").innerHTML = "Hi";
+
+    document.getElementById("pcontent").style.color = "red";
+
+    // var element = document.getElementById("imgcontent");
+
+    document.getElementById("imgcontent").src = "mobileappforbusiness.png";
+
+    var element = document.getElementById("acontent");
+
+    element.setAttribute("href","mobileappforbusiness.png");
+}
+
+console.log("Hi");
+
+</script>
+
+
+</html>

@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>HTML Form</title>
+</head>
+
+<body>
+
+
+    <form name="myForm" >
+
+        <label>Value 01</label> <br>
+        <input type="text" id="val1" name="value1"> <br>
+        
+        <label>Value 02</label> <br>
+        <input type="text" name="value2">
+
+        <br>
+
+        <br>
+        
+         <select  name="oparetion">
+
+            <option value="add">Add</option>
+            <option value="sub">sub</option>
+            
+
+
+         </select>
+
+         <br>
+
+         <br>
+
+         <br>
+
+        <input type="submit" value="Submit" onclick="calculate()">
+
+
+    </form>
+
+  
+    <p></p>
+  
+
+
+</body>
+
+
+<script> 
+
+
+function calculate(){
+
+
+   var oparend1 = document.forms["myForm"]["value1"].value;
+   console.log (oparend1);
+
+}
+
+
+console.log("Hi");
+
+</script>
+
+
+</html>
